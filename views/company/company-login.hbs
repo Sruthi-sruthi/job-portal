@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="/stylesheets/company/company-login.css">
+{{#if errormsg}}
+<h2>{{errormsg}}</h2>
+{{/if}}
+
+<form action="/company/complogin" method="post">
+    <div class="main">
+        <h1>log in</h1>
+    <input type="email" name="email" placeholder=" email" class="email"><br><br>
+    <input type="password" name="password" placeholder="password"><br><br> 
+    <button type="submit">log in</button> 
+    </div>
+</form>

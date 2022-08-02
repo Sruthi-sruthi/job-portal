@@ -1,0 +1,25 @@
+.card-group{
+    margin-top: 10px;
+}
+.card-body{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.instagram{
+    width: 25vw;
+}
+.facebook{
+    width: 25vw;
+
+}
+.gmail{
+    width: 25vw;
+
+}
+.twitter{
+    width: 25vw;
+
+}
+.card-footer{
+    text-align: center;
+}

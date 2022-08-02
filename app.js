@@ -1,5 +1,6 @@
 var createError = require("http-errors");
 var express = require("express");
+const session = require("express-session");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
@@ -7,7 +8,7 @@ const connectDB = require("./config/config");
 connectDB();
 
 var indexRouter = require("./routes/index");
-var usersRouter = require("./routes/users");
+var companyRouter = require("./routes/company");
 
 var app = express();
 
@@ -17,12 +18,21 @@ app.set("view engine", "hbs");
 
 app.use(logger("dev"));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: false })); //working req.body
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
+app.use(
+  session({
+    secret: "sruthi",
+    resave: false,
+    saveUninitialized: true,
+    cookie: { maxAge: 5 * 60 * 60 * 1000 }, //cookie duration
+  })
+);
+
 app.use("/", indexRouter);
-app.use("/users", usersRouter);
+app.use("/company", companyRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

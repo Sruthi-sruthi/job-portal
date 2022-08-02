@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Catamaran:wght@100&family=Cormorant+SC:wght@300&family=Inconsolata:wght@200&family=Lobster&family=Permanent+Marker&family=Rubik+Moonrocks&family=Smokum&display=swap');
+
+.main{
+    width: 27vw;
+    height: 65vh;
+    margin-left: 170px;
+    /* margin: auto; */
+    /* border: 1px solid rgb(19, 33, 19);   */
+    margin-top: 110px;
+    /* background-color: white; */
+    border: 1px solid rgb(19, 33, 19) ;
+    box-shadow: 2px 2px 3px rgb(19, 33, 19) ;
+}
+body{
+    background-image: url("https://media.istockphoto.com/photos/business-table-top-with-mock-up-office-supplies-on-white-picture-id843814242?b=1&k=20&m=843814242&s=170667a&w=0&h=-ipyoMotSGlSI5mlncM3Y_o-qhJK9eIhR2eXPezzD40=");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+input{
+    width: 250px;
+    height: 40px;
+    margin-left: 25px;
+    /* background-color: transparent; */
+    border-radius: 30px;
+    border: 1px solid rgb(19, 33, 19) ;
+    padding-left: 20px;
+    text-transform: capitalize;
+    background-color: transparent;
+}
+h1{
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 0px;
+    /* background-color:rgb(19, 33, 19) ; */
+    /* background-color: rgb(9, 37, 9); */
+    background-color: rgb(8, 53, 8);
+    color: white;
+    padding-bottom: 15px;
+    font-family: 'Inconsolata', monospace;
+    text-transform: capitalize;
+    
+}
+
+button{
+    width: 200px;
+    height: 40px;
+    margin-left: 65px;
+    margin-top: 30px;
+    border-radius: 20px;
+    /* background-color: rgb(19, 33, 19); */
+    background-color: rgb(8, 53, 8);
+
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+button:hover{
+    background-color: rgb(6, 71, 6);
+}
+.email{
+margin-top: 40px;
+}

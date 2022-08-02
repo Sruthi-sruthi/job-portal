@@ -1,0 +1,34 @@
+h2{
+    text-align: center;
+    padding-top: 20px;
+}
+.card{
+    width: 900px;
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 1px 1px 5px black;
+    overflow: hidden;
+}
+.data{
+    margin-left: 50px;
+    text-transform: capitalize;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.card-title{
+margin-left: 50px;
+text-transform: uppercase;
+}
+/* .col-md-8{
+    background-color: #5be3b8;
+    background-image: linear-gradient(315deg, #ace6d3 0%, #a8cfbd 74%);
+} */
+
+.col-md-8{
+    background-color: #deebdd;
+background-image: linear-gradient(315deg, #deebdd 0%, #bbdbbe 74%);
+}
+
+/* body{
+    background-color: gray;
+} */

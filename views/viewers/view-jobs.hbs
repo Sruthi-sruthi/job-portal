@@ -1,0 +1,37 @@
+
+<link rel="stylesheet" href="/stylesheets/homepage.css">
+
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+<h2>JOBS</h2>
+
+{{#each allJobs}}
+<div class="card">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqIFENVoQ_GbkkRAzHn45d7TABhL9FNqvkIQ&usqp=CAU" 
+      class="img-fluid rounded-start" alt="..."
+      style="width:400px  ;height: 310px; object-fit: cover;">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{jobtitle}}</h5> 
+      </div>
+      <div class="data">
+        <p>{{companyName}}</p>
+        <p>{{description}}</p>
+        <p>{{vaccancy}}</p>
+        <p>{{salary}}</p>
+        <p>{{area}}</p>
+        <p>{{publisheddate}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+{{/each}}
+

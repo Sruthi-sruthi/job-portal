@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="/stylesheets/company/update-company.css" />
+<form action="/company/compsignup" method="post">
+  <div class="main">
+    <h1>update profile</h1>
+    <input
+      type="text"
+      name="companyname"
+      placeholder="companyname"
+      class="compname"
+    /><br /><br />
+    <input type="email" name="email" placeholder="official email" /><br /><br />
+    <input type="password" name="password" placeholder="password" /><br /><br />
+    <input
+      type="number"
+      name="number"
+      placeholder="mobile number"
+    /><br /><br />
+    <input
+      type="text"
+      name="personname"
+      placeholder="contact person's name"
+    /><br /><br />
+    <select name="industryType">
+      <option value=" ">industry type</option>
+      <option>accounting/finance</option>
+      <option>agriculure/dairy</option>
+      <option>hotels/travel</option>
+      <option>recruitment</option>
+      <option>export/import</option></select
+    ><br /><br />
+    <textarea name="description" id="description" placeholder="description"></textarea>
+    <button type="submit">update</button>
+  </div>
+  {{!-- <div class="bottom">
+    <h2>already registered ? <a href="complogin">Login Now</a></h2>
+  </div> --}}
+</form>

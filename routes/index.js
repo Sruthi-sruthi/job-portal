@@ -1,21 +1,39 @@
 var express = require("express");
 var router = express.Router();
 
+let {
+  getHomePage,
+  getSignupPage,
+  createUser,
+  userLoginPage,
+  userProfilepage,
+  userUpdatePage,
+  doLogin,
+  userHomePage,
+  viewJobsPage,
+} = require("../controllers/user-controller");
+const checkUser = require("../middlewares/check-user");
+
 /* GET home page. */
-router.get("/", function (req, res, next) {
-  res.render("index", { title: "node", name: "sruthi", marks: { cs: 96 } });
-});
+router.get("/", getHomePage);
 // router.get("/login", function (req, res) {
 //   res.render("login", { companyname: "zion it" });
 // });
-router.get("/signup", function (req, res) {
-  res.render("viewers/signup", { name: "sruthi" });
-});
-router.get("/login", function (req, res) {
-  res.render("viewers/login", { name: "sruthi" });
-});
-router.get("/profile", function (req, res) {
-  res.render("viewers/user-profile", { name: "sruthi" });
-});
+
+// router.get("/signup", getSignupPage);
+
+// router.post("/signup", createUser);
+
+router.route("/signup").get(getSignupPage).post(createUser);
+
+router.route("/login").get(userLoginPage).post(doLogin);
+
+router.get("/profile", userProfilepage);
+
+router.get("/update", checkUser, userUpdatePage);
+
+router.get("/home", checkUser, userHomePage);
+
+router.get("/viewjobs", checkUser, viewJobsPage);
 
 module.exports = router;

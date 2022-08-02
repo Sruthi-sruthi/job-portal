@@ -1,0 +1,46 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(186, 180, 180); */
+}
+.data{
+    width: 50vw;
+    height: 90vh;
+    /* background-color: gray; */
+    margin: auto;
+}
+input{
+    width: 300px;
+    height: 30px;
+    border-radius: 50px;
+    border: 1px solid black;
+    margin-left: 150px;
+    background-color: transparent;
+    padding-left: 20px;
+}
+#jobtitle{
+    margin-top: 20px;
+}
+h1{
+    text-align: center;
+    padding-top: 30px;
+    text-transform: capitalize;
+    color: rgb(46, 13, 13);
+}
+button{
+    width: 160px;
+    height: 40px;
+    margin-left: 220px;
+    margin-top: 30px;
+    border-radius: 30px; 
+    background-color: rgb(86, 52, 52);
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+}
+body{
+    /* background-image: url("https://i.pinimg.com/originals/e8/a7/4e/e8a74e5feac64cadb9ae726bde33fba9.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8&w=1000&q=80");
+}
