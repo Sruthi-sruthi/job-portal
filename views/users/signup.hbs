@@ -6,12 +6,12 @@
         <h1 class="heading">sign up</h1>
 
         <form  action="/signup" method="post">
-          <input type="text" name="username"  placeholder="username"  id="username" /><br /><br /> 
-         <input type="text" name="address" placeholder="address" id="address"  ><br><br>
-          <input type="email" name="email" placeholder="email" id="email" /><br /><br />
-          <input type="password" name="password"  placeholder="password" id="password"  /><br /><br />
-         <input type="number" name="number" placeholder="mobile number" id="number" ><br><br>
-         <select name="workStatus">
+          <input type="text" name="username"  placeholder="username"  id="username" required/><br /><br /> 
+         <input type="text" name="address" placeholder="address" id="address"  required><br><br>
+          <input type="email" name="email" placeholder="email" id="email" required/><br /><br />
+          <input type="password" name="password"  placeholder="password" id="password"  required/><br /><br />
+         <input type="number" name="number" placeholder="mobile number" id="number" required ><br><br>
+         <select name="workStatus" required>
           <option value="">Work Status</option>
           <option >fresher</option>
           <option >experienced</option>

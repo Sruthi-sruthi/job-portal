@@ -11,6 +11,7 @@ let {
   doLogin,
   userHomePage,
   viewJobsPage,
+  updateUserPage,
 } = require("../controllers/user-controller");
 const checkUser = require("../middlewares/check-user");
 
@@ -28,9 +29,10 @@ router.route("/signup").get(getSignupPage).post(createUser);
 
 router.route("/login").get(userLoginPage).post(doLogin);
 
-router.get("/profile", userProfilepage);
+router.get("/profile", checkUser, userProfilepage);
 
 router.get("/update", checkUser, userUpdatePage);
+router.post("/update", updateUserPage);
 
 router.get("/home", checkUser, userHomePage);
 

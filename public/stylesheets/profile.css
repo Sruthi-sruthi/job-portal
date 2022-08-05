@@ -21,10 +21,10 @@ body{
 img{
     width: 150px;
     height: 150px;
-    background-image: url("https://media.istockphoto.com/vectors/user-member-vector-icon-for-ui-user-interface-or-profile-face-avatar-vector-id1130884625?k=20&m=1130884625&s=612x612&w=0&h=OITK5Otm_lRj7Cx8mBhm7NtLTEHvp6v3XnZFLZmuB9o=");
+    /* background-image: url("https://media.istockphoto.com/vectors/user-member-vector-icon-for-ui-user-interface-or-profile-face-avatar-vector-id1130884625?k=20&m=1130884625&s=612x612&w=0&h=OITK5Otm_lRj7Cx8mBhm7NtLTEHvp6v3XnZFLZmuB9o="); */
     /* background-image: url("https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"); */
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background-size: cover;
+    background-repeat: no-repeat; */
     margin-top: 20px;
     border-radius: 100px;
     margin-left: 30px;
@@ -50,18 +50,22 @@ p{
     text-transform: capitalize;
     font-size: 20px;
 }
-#dob{
-padding-top: 20px;
+#address{
+padding-top: 30px;
 }
 button{
     width: 170px;
     height: 40px;
     border-radius: 30px;
-    margin-left: 160px;
+    margin-left: 120px;
     background-color: rgb(33, 33, 99);
     color: white;
     font-size: 20px;
     text-transform: uppercase;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-top: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
 }

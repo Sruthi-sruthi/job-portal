@@ -37,6 +37,20 @@ const UserSchema = mongoose.Schema({
     // required: true,
     // trim: true,
   },
+  skills: {
+    type: String,
+    maxLength: 100,
+    trim: true,
+  },
+  education: {
+    type: String,
+    maxLength: 100,
+    trim: true,
+  },
+  additionalInfo: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 module.exports = mongoose.model("user", UserSchema);

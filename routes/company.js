@@ -12,6 +12,7 @@ let {
   doLogin,
   addjob,
   companyHomePage,
+  updateCompanyPage,
 } = require("../controllers/company-controller");
 const checkCompany = require("../middlewares/check-company");
 // const { doLogin } = require("../controllers/user-controller");
@@ -27,12 +28,13 @@ router.get("/complogin", getLoginPage);
 
 router.post("/complogin", doLogin);
 
-router.get("/compprofile", getProfilePage);
+router.get("/compprofile", checkCompany, getProfilePage);
 
 router.get("/addjob", checkCompany, addJobPage);
 router.post("/addjob", checkCompany, addjob);
 
-router.get("/updatecompany", getUpdatePage);
+router.get("/updatecompany", checkCompany, getUpdatePage);
+router.post("/updatecompany", updateCompanyPage);
 
 router.get("/companyhome", checkCompany, companyHomePage);
 

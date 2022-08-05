@@ -1,7 +1,5 @@
 <link rel="stylesheet" href="/stylesheets/login.css">
-{{#if errormsg}}
-<h2>{{errormsg}}</h2>
-{{/if}}
+
 <div class="flex-container">
 <div class="flex-child image"></div>
 <div class="flex-child text">
@@ -9,6 +7,9 @@
 <form action="/login" method="post">
 <input type="text" name="email" id="email" placeholder="email" class="email" required><br><br>
 <input type="password" name="password" id="password" placeholder="password" required><br><br>
+{{#if errormsg}}
+<h4>{{errormsg}}</h4>
+{{/if}}
 <button type="submit">log in</button>
 </form>
 </div>

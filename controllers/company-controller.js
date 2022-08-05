@@ -58,7 +58,7 @@ const doLogin = async function (req, res) {
 
 const getProfilePage = function (req, res) {
   console.log(req.session.company);
-  res.render("company/company-profile");
+  res.render("company/company-profile", { company: req.session.company });
 };
 
 const addJobPage = function (req, res) {
@@ -67,15 +67,34 @@ const addJobPage = function (req, res) {
 
 const addjob = async function (req, res) {
   console.log(req.body);
-  req.body.companyName = req.session.company.company.companyname;
-  req.body.companyId = req.session.company.company._id;
+  req.body.companyName = req.session.company.companyname;
+  req.body.companyId = req.session.company._id;
   await JobModel.create(req.body);
   // res.send("hy");
   res.redirect("/company/companyhome");
 };
 
 const getUpdatePage = function (req, res) {
-  res.render("company/update-company-page");
+  console.log(req.session.company);
+  res.render("company/update-company-page", { company: req.session.company });
+};
+
+const updateCompanyPage = async function (req, res) {
+  console.log(req.body);
+  console.log(req.files);
+  let { _id } = req.session.company;
+  let { image } = req.files;
+  await image.mv("./public/images/company/profile/" + _id + ".jpg");
+  req.body.additionalInfo = true;
+  let company = await CompanyModel.findOneAndUpdate(
+    { _id: req.session.company._id },
+    req.body,
+    { new: true }
+  );
+  console.log(company);
+  req.session.company = company;
+  console.log(req.session.company);
+  res.redirect("/company/compprofile");
 };
 
 const companyHomePage = function (req, res) {
@@ -94,4 +113,5 @@ module.exports = {
   doLogin,
   addjob,
   companyHomePage,
+  updateCompanyPage,
 };

@@ -1,19 +1,25 @@
 <link rel="stylesheet" href="/stylesheets/company/company-profile.css">
 <div class="main">
     <div class="image">
-        <img>
+        {{#if company.additionalInfo}}
+        <img src="/images/company/profile/{{company._id}}.jpg">
+        {{else}}
+        <img src="/images/company/profile/no_company.jpg">
+        {{/if}}
     </div>
     <div class="name">
-        <h1>zion it company</h1>  
+        <h1>{{company.companyname}}</h1>  
         </div>
 <div class="data">
-<p id="email">official email id</p>
-<p>phone number</p>
-<p>contact persons name</p>
-<p>industry type</p>
-<p>description:
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, rerum eligendi quibusdam illum error sunt ullam dolorum voluptatum aperiam debitis in libero quos consectetur architecto accusamus, omnis, doloremque reiciendis nobis.</p>
-<button>update</button>
+<p id="email">{{company.email}}</p>
+<p>{{company.number}}</p>
+<p>{{company.personname}}</p>
+<p>{{company.industryType}}</p>
+<p>{{company.description}}</p>
+<p>{{company.area}}</p>
+<p>{{company.address}}</p>
+
+<button><a href="/company/updatecompany">update</a></button>
 
 </div>
 </div>

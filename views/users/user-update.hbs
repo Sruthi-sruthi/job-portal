@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="/stylesheets/userupdate.css">
+
+ <div class="flex-container">
+      <div class="flex-child image"></div>
+      <div class="flex-child text">
+        <h1 class="heading">update profile</h1>
+
+        <form action="/update" method="post" enctype="multipart/form-data">
+          <input type="text" name="username"  placeholder="username"  id="username" value="{{user.username}}" required/><br /><br /> 
+         <input type="text" name="address" placeholder="address" id="address" value="{{user.address}}" required><br><br>
+          <input type="email" name="email" placeholder="email" id="email" value="{{user.email}}" required/><br /><br />
+          {{!-- <input type="password" name="password"  placeholder="password" id="password" value="{{user.password}}" /><br /><br /> --}}
+         <input type="number" name="number" placeholder="mobile number" id="number" value="{{user.number}}" required><br><br>
+         <select name="workStatus" required>
+          <option value="">Work Status</option>
+          <option selected>fresher</option>
+          <option >experienced</option>
+          </select><br><br>
+          <h4>additional info</h4>
+         <input type="text" name="skills" placeholder="skills" id="skills" value="{{user.skills}}" required><br><br>
+         <input type="text" name="education" placeholder="education" id="education" value="{{user.education}}" required><br><br>
+         <input type="file" name="image" required><br><br>
+         <input type="file" name="resume" required><br><br>
+          <button type="submit">update</button>
+          
+        </form>
+      </div>
+    </div>

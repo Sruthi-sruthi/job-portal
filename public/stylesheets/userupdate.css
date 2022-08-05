@@ -17,7 +17,7 @@
 .heading{
     color: #1f4950;
     text-transform: capitalize;
-    margin-top: 10px;
+    margin-top:-20px;
 }
 body{
     background-color: #eec0c6;
@@ -33,6 +33,7 @@ input{
     background: transparent;
     text-transform: capitalize;
     border: 1px solid black;
+    margin-top: -10px;
 }
 select{
     width: 300px;
@@ -59,9 +60,14 @@ button{
     color: #fff;
     text-transform: uppercase;
     font-family: montserrat-semibold;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 #username{
-    margin-top: 30px;
+    margin-top: 10px;
+}
+h4{
+    text-transform: capitalize;
+    color: #1f4950;
+    font-weight:500;
 }

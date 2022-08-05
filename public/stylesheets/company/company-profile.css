@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 40vw;
-    height: 100vh;
+    height: 110vh;
     margin: auto;
     /* margin-left: 600px; */
     box-shadow: 2px 2px 2px black;      
@@ -27,9 +27,9 @@ body{
 img{
     width: 200px;
     height: 200px;
-    background-image: url("https://media.istockphoto.com/vectors/user-member-vector-icon-for-ui-user-interface-or-profile-face-avatar-vector-id1130884625?k=20&m=1130884625&s=612x612&w=0&h=OITK5Otm_lRj7Cx8mBhm7NtLTEHvp6v3XnZFLZmuB9o=");
+    /* background-image: url("https://media.istockphoto.com/vectors/user-member-vector-icon-for-ui-user-interface-or-profile-face-avatar-vector-id1130884625?k=20&m=1130884625&s=612x612&w=0&h=OITK5Otm_lRj7Cx8mBhm7NtLTEHvp6v3XnZFLZmuB9o=");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     margin-top: 20px;
     border-radius: 20px;
     margin-left: 30px;
@@ -55,12 +55,12 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 p{
-    margin-left: 30px;
+    margin-left: -10px;
     text-transform: capitalize;
     font-size: 16px;
 }
 #email{
-padding-top: 80px;
+padding-top: 100px;
 
 }
 
@@ -68,11 +68,16 @@ button{
     width: 170px;
     height: 40px;
     border-radius: 30px;
-    margin-left: 160px;
+    margin-left: 100px;
     background-color: #395c45;
     color: white;
     font-size: 20px;
     text-transform: uppercase;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }

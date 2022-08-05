@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/stylesheets/company/update-company.css" />
-<form action="/company/compsignup" method="post">
+<form action="/company/updatecompany" method="post" enctype="multipart/form-data">
   <div class="main">
     <h1>update profile</h1>
     <input
@@ -7,28 +7,52 @@
       name="companyname"
       placeholder="companyname"
       class="compname"
-    /><br /><br />
-    <input type="email" name="email" placeholder="official email" /><br /><br />
-    <input type="password" name="password" placeholder="password" /><br /><br />
+      value="{{company.companyname}}"
+     required/><br /><br />
+    <input type="email" name="email" placeholder="official email" value="{{company.email}}" required/><br /><br />
+    {{!-- <input type="password" name="password" placeholder="password" /><br /><br /> --}}
     <input
       type="number"
       name="number"
       placeholder="mobile number"
+     value="{{company.number}}"
+     required
     /><br /><br />
     <input
       type="text"
       name="personname"
       placeholder="contact person's name"
+      value="{{company.personname}}"
+      required
     /><br /><br />
-    <select name="industryType">
+
+    <select name="industryType" required>
       <option value=" ">industry type</option>
-      <option>accounting/finance</option>
+      <option selected>accounting/finance</option>
       <option>agriculure/dairy</option>
       <option>hotels/travel</option>
       <option>recruitment</option>
       <option>export/import</option></select
     ><br /><br />
-    <textarea name="description" id="description" placeholder="description"></textarea>
+    
+
+    <h5>additional info</h5>
+    <textarea name="description" id="description" placeholder="description"
+      required>{{company.description}}</textarea>
+ <input
+      type="text"
+      name="area"
+      placeholder="area"
+      value="{{company.area}}"
+   required /><br /><br />
+
+    <input
+      type="text"
+      name="address"
+      placeholder="address"
+      value="{{company.address}}"
+     required  /><br /><br />
+     <input type="file" name="image"  required><br><br>
     <button type="submit">update</button>
   </div>
   {{!-- <div class="bottom">

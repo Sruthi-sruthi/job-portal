@@ -22,4 +22,11 @@
 }
 .card-footer{
     text-align: center;
+background-color:gray;
 }
+
+.card{
+    width: 100vw;
+    margin-top: 10px;
+}
+
