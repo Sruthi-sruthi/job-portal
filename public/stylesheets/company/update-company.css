@@ -1,20 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Catamaran:wght@100&family=Cormorant+SC:wght@300&family=Inconsolata:wght@200&family=Lobster&family=Permanent+Marker&family=Rubik+Moonrocks&family=Smokum&display=swap');
-.main{
+body{
+    background-image: url("https://i.pinimg.com/736x/27/d4/ec/27d4ec1f4267ccc814a765d5e7427899.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   }
+   .main{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left : 440px;
+   }
+  
+   .first{
     width: 30vw;
-    height: 100vh;
-    /* background-color: blueviolet; */
-    /* margin: auto; */
-    margin-left: 300px;
-    /* border: 1px solid rgb(19, 33, 19);   */
-    /* margin-top: 30px; */
-    margin-left: 650px;
+    height: 50vh;
+    padding-left: 20px;
+    padding-top: 10px;
     background-color: white;
-}
-input{
+
+   }
+   .second{
+    width: 30vw;
+    height: 50vh;
+    padding-left: 20px;
+    
+    background-color: white;
+
+   }
+
+   .compname{
+    margin-top: 20px;
+   }
+   input{
     width: 250px;
     height: 30px;
-    margin-left: 55px;
-    /* background-color: transparent; */
+    margin-left: 40px;
     border-radius: 30px;
     border: 1px solid rgb(19, 33, 19) ;
     padding-left: 20px;
@@ -23,87 +44,64 @@ input{
 select{
     width: 250px;
     height: 30px;
-    margin-left: 55px;
+    margin-left: 40px;
     border-radius: 30px;
     border: 1px solid rgb(19, 33, 19) ;
     padding-left: 20px;
     text-transform: capitalize;
-    
 }
+
 textarea{
     width: 250px;
     height: 30px;
-    margin-left: 55px;
+    margin-left: 40px;
     border-radius: 30px;
     border: 1px solid rgb(19, 33, 19) ;
     padding-left: 20px;
     text-transform: capitalize;
+
 }
-.compname{
-    margin-top: 10px;
+
+h5{
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 10px;
+    width: 30vw;
+    height: 50px;
+    background-color: aliceblue;
+    margin-left: -20px;
+    background-color: rgb(9, 56, 9);
+color: white;
+font-family: 'Inconsolata', monospace;
+text-transform: capitalize;
+font-size: 30px;
+}
+#description{
+    margin-top: 15px;
 }
 h1{
+    background-color: aquamarine;
+    margin-left: 440px;
+    margin-right: 56px;
     text-align: center;
-    padding-top: 10px;
-    margin-top: 0px;
-    /* background-color:rgb(19, 33, 19) ; */
-    background-color: rgb(9, 37, 9);
+    margin-top: 100px;
+    text-transform: uppercase;
     color: white;
-    padding-bottom: 10px;
-    /* font-family: 'Catamaran', sans-serif; */
+    background-color: rgb(9, 37, 9);
     font-family: 'Inconsolata', monospace;
-    text-transform: capitalize;
-    
+
 }
 button{
     width: 200px;
     height: 40px;
-    margin-left: 85px;
-    margin-top: 15px;
+    margin-left: 710px;
     border-radius: 20px;
     background-color: rgb(19, 33, 19);
     color: white;
     font-size: 18px;
     text-transform: capitalize;
+    margin-top: 2px
 }
 button:hover{
     background-color: rgb(9, 37, 9);
-}
-body{
- background-image: url("https://i.pinimg.com/736x/27/d4/ec/27d4ec1f4267ccc814a765d5e7427899.jpg");
-  /* background-image: url("https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cHJvZmVzc2lvbmFsJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80"); */
-background-repeat: no-repeat;
-background-size: cover;
-}
-.bottom{
-    width: 30vw;
-    height: 10vh;   
-    /* margin: auto; */
-    margin-left: 300px;
-    margin-top: -19px;
-}
-h2{
-    color: white;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: rgb(6, 26, 6);
-    font-family: 'Inconsolata', monospace;
-    text-transform: capitalize;
-    font-size: 19px;
-}
-a{
-    color: white;
-    font-family: 'Inconsolata', monospace;
-    text-transform: capitalize;
-    font-size: 19px;
-    text-decoration: none;
-}
-a:hover{
-    color: green;
-}
-h5{
-    text-align: center;
-    text-transform: capitalize;
-    color:rgb(9, 37, 9) ;
 }

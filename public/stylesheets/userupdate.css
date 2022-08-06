@@ -1,4 +1,4 @@
-.flex-container {
+/* .flex-container {
     display: flex;
 }
 .flex-child {
@@ -8,7 +8,6 @@
     text-align: center;    
 }  
 .image{
-    /* background-image: url("https://www.hubspot.com/hubfs/professional-background-bio.jpeg"); */
     background-image: url("https://img.freepik.com/premium-photo/office-blue-desk-equipment-working-top-view-flat-lay-blue-background_38937-393.jpg?w=2000");
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,7 +59,7 @@ button{
     color: #fff;
     text-transform: uppercase;
     font-family: montserrat-semibold;
-    /* margin-top: 20px; */
+    
 }
 
 #username{
@@ -70,4 +69,119 @@ h4{
     text-transform: capitalize;
     color: #1f4950;
     font-weight:500;
+} */
+
+body{
+    background-image: url("https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2017/01/26053440/Job-Seekers-Who-Used-FlexJobs-to-Find-Remote-Work-1024x512.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-wrap: nowrap;
+    /* padding-left : 440px; */
+   }
+   .first{
+    width: 30vw;
+    height: 50vh;
+    padding-left: 20px;
+    padding-top: 10px;
+    background-color: white;
+
+   }
+   .second{
+    width: 30vw;
+    height: 50vh;
+    padding-left: 20px;
+    background-color: white;
+   }
+
+   input{
+    width: 250px;
+    height: 30px;
+    margin-left: 40px;
+    border-radius: 30px;
+    border: 1px solid rgb(19, 33, 19) ;
+    padding-left: 20px;
+    text-transform: capitalize;
+}
+select{
+    width: 250px;
+    height: 30px;
+    margin-left: 40px;
+    border-radius: 30px;
+    border: 1px solid rgb(19, 33, 19) ;
+    padding-left: 20px;
+    text-transform: capitalize;
+}
+
+textarea{
+    width: 250px;
+    height: 30px;
+    margin-left: 40px;
+    border-radius: 30px;
+    border: 1px solid rgb(19, 33, 19) ;
+    padding-left: 20px;
+    text-transform: capitalize;
+
+}
+
+h5{
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 10px;
+    width: 30vw;
+    height: 50px;
+    background-color: aliceblue;
+    margin-left: -20px;
+    /* background-color: rgb(9, 56, 9); */
+    background-color: rgb(65, 31, 31);
+
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    text-transform: capitalize; 
+    font-size: 30px;
+}
+
+
+
+h1{
+    background-color: aquamarine;
+    /* margin-left: 100px; */
+    margin-right: 496px;
+    text-align: center;
+    margin-top: 100px;
+    text-transform: uppercase;
+    color: white;
+    /* background-color: rgb(9, 37, 9); */
+    background-color: rgb(42, 13, 13);
+    font-family: 'Inconsolata', monospace;
+
+}
+button{
+    width: 200px;
+    height: 40px;
+    margin-left: 300px;
+    border-radius: 20px;
+    background-color: rgb(19, 33, 19);
+    background-color: rgb(65, 31, 31);
+
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-top: 2px
+}
+button:hover{
+    background-color: rgb(9, 37, 9);
+}
+
+#username{
+    margin-top: 15px;
+}
+#skills{
+    margin-top: 15px;
+
 }
