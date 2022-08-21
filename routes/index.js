@@ -12,6 +12,7 @@ let {
   userHomePage,
   viewJobsPage,
   updateUserPage,
+  applyJob,
 } = require("../controllers/user-controller");
 const checkUser = require("../middlewares/check-user");
 
@@ -37,5 +38,7 @@ router.post("/update", updateUserPage);
 router.get("/home", checkUser, userHomePage);
 
 router.get("/viewjobs", checkUser, viewJobsPage);
+
+router.post("/applyjob", applyJob);
 
 module.exports = router;

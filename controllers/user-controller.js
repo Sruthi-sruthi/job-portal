@@ -1,6 +1,8 @@
 const UserModel = require("../models/user-model");
 const bcrypt = require("bcrypt");
 const JobModel = require("../models/job-model");
+const JobApplication = require("../models/jobapplication-model");
+const jobapplicationModel = require("../models/jobapplication-model");
 
 const createUser = async function (req, res) {
   const hash = await bcrypt.hash(req.body.password, 10);
@@ -95,6 +97,27 @@ const viewJobsPage = async function (req, res) {
   res.render("users/view-jobs", { allJobs });
 };
 
+const applyJob = async function (req, res) {
+  console.log(req.body);
+  let d = new Date().toLocaleString();
+  console.log(d);
+  console.log(req.session.user);
+  let { jobId, companyName, companyId } = req.body;
+  let { _id, username, email, number } = req.session.user;
+  let applicationobj = await jobapplicationModel.create({
+    jobId: jobId,
+    userId: _id,
+    username: username,
+    email: email,
+    number: number,
+    companyId,
+    companyName,
+    applyDate: d,
+  });
+  console.log(applicationobj);
+  res.render("users/home");
+};
+
 module.exports = {
   getHomePage,
   getSignupPage,
@@ -106,4 +129,5 @@ module.exports = {
   userHomePage,
   viewJobsPage,
   updateUserPage,
+  applyJob,
 };

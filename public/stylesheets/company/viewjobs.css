@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(116, 149, 116);
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+p{
+    margin-left: 20px;
+}
+#jobtitle{
+    margin-top: 10px;
+}
+.card{
+    background-color: rgb(161, 192, 161);
+}

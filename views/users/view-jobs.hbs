@@ -16,7 +16,7 @@
     <div class="col-md-4">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqIFENVoQ_GbkkRAzHn45d7TABhL9FNqvkIQ&usqp=CAU" 
       class="img-fluid rounded-start" alt="..."
-      style="width:400px  ;height: 310px; object-fit: cover;">
+      style="width:400px  ;height: 350px; object-fit: cover;">
     </div>
     <div class="col-md-8">
       <div class="card-body">
@@ -29,6 +29,12 @@
         <p>{{salary}}</p>
         <p>{{area}}</p>
         <p>{{publisheddate}}</p>
+        <form action="/applyjob" method="post">
+        <input type="hidden" name="jobId" value={{_id}}>
+        <input type="hidden" name="companyName" value={{companyName}}>
+        <input type="hidden" name="companyId" value={{companyId}}>
+        <button type="submit">apply job</button>
+        </form>
       </div>
     </div>
   </div>

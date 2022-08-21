@@ -4,13 +4,28 @@
     width: 27vw;
     height: 65vh;
     margin-left: 170px;
-    /* margin: auto; */
-    /* border: 1px solid rgb(19, 33, 19);   */
-    margin-top: 110px;
-    /* background-color: white; */
+    margin-top: 50px;
     border: 1px solid rgb(19, 33, 19) ;
     box-shadow: 2px 2px 3px rgb(19, 33, 19) ;
 }
+.footer{
+    width: 27vw;
+    height: 15vh; 
+    margin-left: 170px;
+    border: 1px solid rgb(19, 33, 19) ;
+    margin-top: 3px;
+    box-shadow: 2px 2px 3px rgb(19, 33, 19) ;
+    text-align: center;
+    background-color: rgb(8, 53, 8);
+    font-family: 'Inconsolata', monospace;
+    text-transform: capitalize;
+}
+h5{
+    margin-top: 10px;
+    color: white;
+    font-weight: 500;
+}
+
 body{
     background-image: url("https://media.istockphoto.com/photos/business-table-top-with-mock-up-office-supplies-on-white-picture-id843814242?b=1&k=20&m=843814242&s=170667a&w=0&h=-ipyoMotSGlSI5mlncM3Y_o-qhJK9eIhR2eXPezzD40=");
     background-repeat: no-repeat;
@@ -19,8 +34,7 @@ body{
 input{
     width: 250px;
     height: 40px;
-    margin-left: 25px;
-    /* background-color: transparent; */
+    margin-left: 40px;
     border-radius: 30px;
     border: 1px solid rgb(19, 33, 19) ;
     padding-left: 20px;
@@ -31,8 +45,6 @@ h1{
     text-align: center;
     padding-top: 15px;
     margin-top: 0px;
-    /* background-color:rgb(19, 33, 19) ; */
-    /* background-color: rgb(9, 37, 9); */
     background-color: rgb(8, 53, 8);
     color: white;
     padding-bottom: 15px;
@@ -47,9 +59,7 @@ button{
     margin-left: 65px;
     margin-top: 30px;
     border-radius: 20px;
-    /* background-color: rgb(19, 33, 19); */
     background-color: rgb(8, 53, 8);
-
     color: white;
     font-size: 18px;
     text-transform: capitalize;
@@ -59,4 +69,7 @@ button:hover{
 }
 .email{
 margin-top: 40px;
+}
+a{
+    text-decoration: none;
 }

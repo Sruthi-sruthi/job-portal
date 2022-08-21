@@ -6,7 +6,6 @@
     height: 550px;
     margin-top: 15px;
     text-align: center;  
-
 }  
 .image{
     background-image: url("https://media.istockphoto.com/photos/close-up-of-a-womans-hands-typing-on-a-laptop-computer-picture-id1217890621?b=1&k=20&m=1217890621&s=170667a&w=0&h=h9ePMp1C7er_WHJKWHu5lXV8WQAyD_2B9D4VwFYy3gw=");
@@ -14,7 +13,6 @@
     background-size: cover;
     box-shadow: 2px 2px 4px #804445;
 }
-
 input{
     width: 300px;
     height: 35px;
@@ -27,14 +25,13 @@ input{
     border: 1px solid black;
     margin-top: 10px;
 }
-
 button{
     letter-spacing: 2px;
     border: none;
     width: 200px;
     height: 47px;
     margin-right: 19px;
-    margin-top: 40px;
+    margin-top: 20px;
     border-radius: 23.5px;
     align-items: center;
     justify-content: center;
@@ -48,20 +45,31 @@ button{
 button:hover{
     background-color: #804445;
 }
-
 .login{
     text-transform: capitalize;
-    margin-top: 100px;
-    color:#c76a6c;
+    margin-top: 100px;   
+    /* color:#c76a6c; */
+    color:#6e393b;
 
 }
 .email{
     margin-top: 30px;
 }
-
-/* body{
-    background-image: url("https://media.istockphoto.com/photos/close-up-of-a-womans-hands-typing-on-a-laptop-computer-picture-id1217890621?b=1&k=20&m=1217890621&s=170667a&w=0&h=h9ePMp1C7er_WHJKWHu5lXV8WQAyD_2B9D4VwFYy3gw=");
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
+.bottom{
+    color: #70393a;
+    /* border: 2px solid black; */
+    width: 200px;
+    margin-left: 200px;
+    margin-top: 30px;
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    color: #70393a;
+    font-weight: 700;
+}
+a:hover{
+    color:#4e2829;
+}

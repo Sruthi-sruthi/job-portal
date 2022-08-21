@@ -13,6 +13,9 @@ let {
   addjob,
   companyHomePage,
   updateCompanyPage,
+  jobApplicationPage,
+  viewJob,
+  acceptjob,
 } = require("../controllers/company-controller");
 const checkCompany = require("../middlewares/check-company");
 // const { doLogin } = require("../controllers/user-controller");
@@ -37,5 +40,11 @@ router.get("/updatecompany", checkCompany, getUpdatePage);
 router.post("/updatecompany", updateCompanyPage);
 
 router.get("/companyhome", checkCompany, companyHomePage);
+
+router.get("/jobapplications", checkCompany, jobApplicationPage);
+
+router.get("/viewjob", checkCompany, viewJob);
+
+router.get("/acceptjob/:id", acceptjob);
 
 module.exports = router;

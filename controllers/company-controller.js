@@ -1,6 +1,8 @@
 const CompanyModel = require("../models/company-model");
 const JobModel = require("../models/job-model");
 const bcrypt = require("bcrypt");
+const jobModel = require("../models/job-model");
+const jobapplicationModel = require("../models/jobapplication-model");
 // const companyModel = require("../models/company-model");
 
 const createCompany = async function (req, res) {
@@ -102,6 +104,28 @@ const companyHomePage = function (req, res) {
   res.render("company/companyhome");
 };
 
+const jobApplicationPage = async function (req, res) {
+  let { _id } = req.session.company;
+  let jobapplications = await jobapplicationModel.find({
+    companyId: _id,
+  });
+  console.log(jobapplications);
+  res.render("company/job-applications", { jobapplications });
+};
+
+const viewJob = async function (req, res) {
+  let { _id } = req.session.company;
+  let allJobs = await jobModel.find({
+    companyId: _id,
+  });
+  console.log(allJobs);
+  res.render("company/view-jobs", { allJobs });
+};
+
+const acceptjob = function (req, res) {
+  console.log("hy");
+};
+
 module.exports = {
   getSignupPage,
   getLoginPage,
@@ -114,4 +138,7 @@ module.exports = {
   addjob,
   companyHomePage,
   updateCompanyPage,
+  jobApplicationPage,
+  viewJob,
+  acceptjob,
 };

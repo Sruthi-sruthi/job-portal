@@ -1,0 +1,62 @@
+.card{
+    /* background-color: rgb(235, 219, 196); */
+    background: linear-gradient(rgb(135, 177, 135),rgb(114, 164, 114),rgb(112, 161, 112));
+    width: 50vw;
+    height: 55vh;
+
+}
+.data{
+  margin-top:-220px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.resume{
+  width: 200px;
+  margin-left: 300px;
+  margin-top: 1px;
+  border: none;
+}
+.resume:hover{
+  color: white;
+  background: rgb(15, 31, 15);
+}
+button{
+    width: 20vw;
+    margin-left: 35px;
+    background: linear-gradient(rgb(186, 215, 186),rgb(112, 161, 112));
+    margin-top: 30px;
+    border: 1px solid green;
+}
+button:hover{
+  color: white;
+  background: rgb(15, 31, 15);
+}
+
+
+.inline {
+    display: inline-block; 
+  }
+  p{
+    margin-left: 250px;
+    text-transform: capitalize;
+    font-weight: 300;
+  }
+  #username{
+    margin-top: 30px; 
+  }
+  h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: white;
+  }
+  body{
+    background: linear-gradient(rgb(63, 105, 63),rgb(114, 164, 114),rgb(72, 109, 72));
+  }
+
+  img{
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  

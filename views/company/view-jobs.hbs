@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="/stylesheets/company/viewjobs.css">
+<h1>view jobs</h1>
+{{#each allJobs}}
+
+<div class="card">
+    <p id="jobtitle">{{jobtitle}}</p>
+    <p>{{description}}</p>
+    <p>{{vaccancy}}</p>
+    <p>{{category}}</p>
+    <p>{{salary}}</p>
+    <p>{{area}}</p>
+    <p>{{publisheddate}}</p>
+</div>
+{{/each}}
