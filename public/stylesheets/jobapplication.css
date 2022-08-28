@@ -1,0 +1,32 @@
+img{
+    width: 200px;
+    height: 200px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(132, 59, 71);
+}
+.card{
+    width: 500px;
+    height: 250px;
+    margin-left: 120px;
+    background-color: rgb(243, 222, 221);
+    margin-top: 20px;
+/* border:  1px solid rgb(161, 82, 95); */
+}
+body{
+    background-color: rgb(252, 216, 216);
+}
+.data{
+    margin-left: 250px;
+    margin-top: -150px;
+}
+.main{
+    display: inline-block;
+}
+/* body{
+    background: linear-gradient(rgb(222, 187, 193),rgb(205, 179, 183),rgb(233, 221, 223));
+} */

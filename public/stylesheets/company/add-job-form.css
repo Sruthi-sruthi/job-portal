@@ -22,10 +22,11 @@ input{
     margin-top: 20px;
 }
 h1{
-    text-align: center;
+    /* text-align: center; */
     padding-top: 30px;
     text-transform: capitalize;
     color: rgb(46, 13, 13);
+    margin-left: 220px
 }
 button{
     width: 160px;

@@ -32,9 +32,17 @@ body{
 background-color: #d8cbc4;
 }
 button{
-    background-color:#e4bba5;
-    /* border: none; */
+    border: none;
     text-transform: uppercase;
     border-radius: 20px;
     padding: 5px;
+    width: 150px;
+    box-shadow: 2px 2px 2px #3a3735;
+    color: white;
+    background-color:#a89588;
+}
+button:hover{
+    background-color:#d8b9a5;
+   color: rgb(65, 41, 41);
+
 }

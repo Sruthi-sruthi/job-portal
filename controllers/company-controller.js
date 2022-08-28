@@ -108,9 +108,20 @@ const jobApplicationPage = async function (req, res) {
   let { _id } = req.session.company;
   let jobapplications = await jobapplicationModel.find({
     companyId: _id,
+    status: "applied",
   });
   console.log(jobapplications);
   res.render("company/job-applications", { jobapplications });
+};
+
+const acceptedapplications = async function (req, res) {
+  let { _id } = req.session.company;
+  let jobapplications = await jobapplicationModel.find({
+    companyId: _id,
+    status: "accepted",
+  });
+  console.log(jobapplications);
+  res.render("company/acceptedapplications", { jobapplications });
 };
 
 const viewJob = async function (req, res) {
@@ -122,8 +133,22 @@ const viewJob = async function (req, res) {
   res.render("company/view-jobs", { allJobs });
 };
 
-const acceptjob = function (req, res) {
+const acceptjob = async function (req, res) {
   console.log("hy");
+  await jobapplicationModel.findOneAndUpdate(
+    { _id: req.params.id },
+    { status: "accepted" }
+  );
+  res.redirect("/company/jobapplications");
+};
+
+const rejectjob = async function (req, res) {
+  console.log("hy");
+  await jobapplicationModel.findOneAndUpdate(
+    { _id: req.params.id },
+    { status: "rejected" }
+  );
+  res.redirect("/company/jobapplications");
 };
 
 module.exports = {
@@ -141,4 +166,6 @@ module.exports = {
   jobApplicationPage,
   viewJob,
   acceptjob,
+  rejectjob,
+  acceptedapplications,
 };

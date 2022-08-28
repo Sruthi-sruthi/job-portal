@@ -21,8 +21,10 @@
     <p>{{user.skills}}</p>
     <p>{{user.education}}</p>
     {{!-- <iframe src="/images/user/resume/{{user._id}}.pdf"></iframe> --}}
-    <a href="/images/user/resume/{{user._id}}.pdf" class="btn btn-primary" target="_blank">view resume</a>
+    <a href="/images/user/resume/{{user._id}}.pdf"  target="_blank">
+    <button>view resume</button> </a>
 
-    <a href="/update" class="btn btn-primary update">update</a>
+    <a href="/update"><button class="update">update</button></a>
 </div>
 </div>
+{{!-- class="btn btn-primary" --}}

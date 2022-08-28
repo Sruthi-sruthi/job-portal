@@ -16,6 +16,8 @@ let {
   jobApplicationPage,
   viewJob,
   acceptjob,
+  rejectjob,
+  acceptedapplications,
 } = require("../controllers/company-controller");
 const checkCompany = require("../middlewares/check-company");
 // const { doLogin } = require("../controllers/user-controller");
@@ -43,8 +45,10 @@ router.get("/companyhome", checkCompany, companyHomePage);
 
 router.get("/jobapplications", checkCompany, jobApplicationPage);
 
+router.get("/acceptedapplicants", checkCompany, acceptedapplications);
 router.get("/viewjob", checkCompany, viewJob);
 
-router.get("/acceptjob/:id", acceptjob);
+router.get("/acceptjob/:id", checkCompany, acceptjob);
+router.get("/rejectjob/:id", checkCompany, rejectjob);
 
 module.exports = router;

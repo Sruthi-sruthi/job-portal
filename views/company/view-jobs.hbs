@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="/stylesheets/company/viewjobs.css">
 <h1>view jobs</h1>
 {{#each allJobs}}
-
+<div class="main">
 <div class="card">
     <p id="jobtitle">{{jobtitle}}</p>
     <p>{{description}}</p>
@@ -10,5 +10,6 @@
     <p>{{salary}}</p>
     <p>{{area}}</p>
     <p>{{publisheddate}}</p>
+</div>
 </div>
 {{/each}}

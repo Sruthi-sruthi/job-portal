@@ -118,6 +118,14 @@ const applyJob = async function (req, res) {
   res.render("users/home");
 };
 
+const jobApplicationPage = async function (req, res) {
+  let jobapplications = await jobapplicationModel.find({
+    userId: req.session.user._id,
+  });
+  console.log(jobapplications);
+  res.render("users/viewjobapplications", { jobapplications });
+};
+
 module.exports = {
   getHomePage,
   getSignupPage,
@@ -130,4 +138,5 @@ module.exports = {
   viewJobsPage,
   updateUserPage,
   applyJob,
+  jobApplicationPage,
 };

@@ -82,7 +82,7 @@ font-size: 30px;
 h1{
     background-color: aquamarine;
     margin-left: 440px;
-    margin-right: 56px;
+    margin-right: 108px;
     text-align: center;
     margin-top: 100px;
     text-transform: uppercase;
@@ -94,7 +94,7 @@ h1{
 button{
     width: 200px;
     height: 40px;
-    margin-left: 710px;
+    margin-left: 750px;
     border-radius: 20px;
     background-color: rgb(19, 33, 19);
     color: white;

@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="/stylesheets/company/acceptedapplicants.css">
+
+<h1>accepted applicants</h1>
+{{#each jobapplications}}
+
+<div class="card">
+  <img src="/images/user/profile/{{userId}}.jpg" alt="">
+  <div class="data">
+    <p id="username">{{username}}</p>
+    <p>{{email}}</p>
+    <p>{{number}}</p>
+    <p>{{applyDate}}</p>
+    <p>{{status}}</p>
+    </div>
+   <a href="/images/user/resume/{{userId}}.pdf"  target="_blank"><button class="resume">view resume</button></a>
+   </div>
+   
+{{/each}}

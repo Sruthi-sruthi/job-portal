@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="/stylesheets/jobapplication.css">
+
+<h1> job applications</h1>
+{{#each jobapplications}}
+<div class="main">
+<div class="card">
+ <img src="/images/company/profile/{{companyId}}.jpg" alt="">
+<div class="data">
+    <p>{{companyName}}</p>
+    <p>{{status}}</p>
+    <p>{{applyDate}}</p>
+    </div>
+    </div>
+    </div>
+{{/each}}
